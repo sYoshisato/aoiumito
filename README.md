@@ -1,9 +1,6 @@
-# aoiumito
-<<<<<<< HEAD
-# second trial
+# s_yoshisato
 
-now testing 1148
+*1122
 
-=======
-www.aoiumito.jp
->>>>>>> origin/master
+---
+
