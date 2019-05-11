@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <!-- お問い合わせ -->
+  <meta name="robots" content="noindex,nofollow" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no, address=no, email=no" />
+
+  <title>DAW STUDIO アオイウミト | お問い合わせ</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!--[if lt IE 9]>
+  <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script src="//code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+$(function(){
+  $('a.js-close').click(function(){
+      window.open('about:blank','_self').close();
+      window.close();
+  });
+  // 問い合わせフォーム サブミット用
+  $('a.js-submit').click(function(){
+    $($(this).attr('data-form')).submit();
+  });
+});
+</script>
+</head>
+<body id="contact" class="contact-entry">
+<form class="js-contact_form" name="contact_form" action="" method="post">
+<div id="error_message" style="color:red;font-weight:bold;"><!--エラーが発生しています。--></div>
+
+<article id="contact_content">
+    <div class="contact_box">
+        <h3>コンタクトフォーム</h3>
+        <p>
+            スタジオの予約、利用のご相談など<br />
+            こちらのコンタクトフォームよりお問い合わせください。
+        </p>
+
+        <label>
+            <div class="i-title clearfix">
+                お名前
+                <span class="red">※</span>
+                <div id="name_error" class="error_message">入力してください</div>
+            </div>
+            <input type="text" name="name" id="name" size="30" value="" />
+        </label>
+
+        <label>
+            <div class="i-title clearfix">
+                電話番号
+                <div id="phone_error" class="error_message">電話番号をお確かめください</div>
+            </div>
+            <input type="text" name="phone" id="phone" size="40" value="" />
+        </label>
+
+        <label>
+            <div class="i-title clearfix">
+                メールアドレス
+                <span class="red">※</span>
+                <div id="email_error" class="error_message">メールアドレスをお確かめください</div>
+            </div>
+            <input type="text" name="email" id="email" size="40" value="" />
+        </label>
+
+        <label>
+            <div class="i-title clearfix">
+                お問い合わせ内容
+                <span class="red">※</span>
+                <div id="comment_error" class="error_message">内容を入力ください</div>
+            </div>
+            <textarea name="comment" id="comment" rows="10"></textarea>
+        </label>
+
+        <div>
+          <a class="button btn js-submit" data-form=".js-contact_form" href="#/"><i>&#x25B6;</i> 入力内容を確認する</a>
+        </div>
+
+        <span class="info"><span class="red">※</span>は必須事項になります。</span>
+    </div>
+</article>
+
+</form>
+</body>
+</html>

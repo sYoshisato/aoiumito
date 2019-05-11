@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <!-- お問い合わせ -->
+  <meta name="robots" content="noindex,nofollow" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no, address=no, email=no" />
+
+  <title>DAW STUDIO アオイウミト | お問い合わせ</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!--[if lt IE 9]>
+  <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script src="//code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+$(function(){
+  $('a.js-close').click(function(){
+      window.open('about:blank','_self').close();
+      window.close();
+  });
+  // 問い合わせフォーム サブミット用
+  $('a.js-submit').click(function(){
+    $($(this).attr('data-form')).submit();
+  });
+});
+</script>
+</head>
+<body id="contact" class="contact-confirm">
+<form class="js-contact_form" name="contact_form" action="" method="post">
+<div id="error_message" style="color:red;font-weight:bold;"><!--エラーが発生しています。--></div>
+
+<article id="contact_content">
+    <div class="contact_box">
+        <h3>入力内容のご確認</h3>
+        <p>
+            以下の内容でよろしければ、<br />
+            ページ下部の送信ボタンを押してください。
+        </p>
+
+        <label>
+            <div class="i-title">
+                お名前
+                <span class="red">※</span>
+            </div>
+            <div id="name" class="confirm_input"></div>
+        </label>
+
+        <label>
+            <div class="i-title">
+                電話番号
+            </div>
+            <div id="phone" class="confirm_input"></div>
+        </label>
+
+        <label>
+            <div class="i-title">
+                メールアドレス
+                <span class="red">※</span>
+            </div>
+            <div id="email" class="confirm_input"></div>
+        </label>
+
+        <label>
+            <div class="i-title">
+                お問い合わせ内容
+                <span class="red">※</span>
+            </div>
+            <div id="comment" class="confirm_textarea"></div>
+
+        </label>
+
+        <div>
+        <a class="button btn js-submit" data-form=".js-contact_form" href="#/"><i>&#x25B6;</i> 送信</a>
+        </div>
+
+        <span class="info"><a href="./">&#x25B6; コンタクトフォーム記入ページに戻る</a></span>
+    </div>
+</article>
+
+</form>
+</body>
+</html>
